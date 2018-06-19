@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 
 var PORT = process.env.PORT || 3000;
 
-app.use(express.static(__dirname));
+app.use(express.static('public'));
 
 app.get('/products',function(req,res){
     console.log(req.query);
